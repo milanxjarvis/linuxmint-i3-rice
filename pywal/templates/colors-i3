@@ -1,0 +1,6 @@
+# Pywal i3 colors
+
+client.focused          {color2} {background} {foreground} {color2} {color2}
+client.unfocused        {color0} {background} {color8} {color0} {color0}
+client.focused_inactive {color0} {background} {color8} {color0} {color0}
+client.urgent            {color1} {background} {foreground} {color1} {color1}
