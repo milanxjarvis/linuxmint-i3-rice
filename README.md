@@ -273,6 +273,7 @@ The i3 configuration includes custom shortcuts such as:
 Mod + Enter       → Kitty
 Mod + D           → Rofi launcher
 Mod + N           → Nemo
+Mod + Q           → Close the focus window
 Mod + Shift + Q   → Power menu
 ```
 
