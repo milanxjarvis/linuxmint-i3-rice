@@ -11,13 +11,14 @@
 
 set $mod Mod4
 #set autotiling
-#exec --no-startup-id autotiling
+exec_always --no-startup-id autotiling
 #load pywal colors
 include ~/.cache/wal/colors-i3
-
+#lock the screen
+bindsym $mod+Ctrl+l exec --no-startup-id i3lock-fancy -g
 #make pywal automatic + wallaper 
-exec_always --no-startup-id wal -i ~/wallpapers/megumi.png
-exec_always --no-startup-id sh -c 'feh --bg-fill ~/wallpapers/megumi.png'
+exec_always --no-startup-id wal -i ~/Pictures/megumi.png
+exec_always --no-startup-id sh -c 'feh --bg-fill ~/Pictures/megumi.png'
 
 # Picom
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
@@ -33,7 +34,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 #client.urgent            #ff0000 #000000 #ffffff #ff0000 #ff0000
 
 #remove title bar
-default_border pixel 4
+default_border pixel 4 
 
 # Power menu
 bindsym $mod+Shift+q exec --no-startup-id ~/.config/rofi/powermenu.sh
